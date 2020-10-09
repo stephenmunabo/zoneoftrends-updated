@@ -1,0 +1,15 @@
+*** AliExpress Dropshipping for WooCommerce  ***
+
+2020-07-10 - version 1.0.3
+* Add- Instant sync inventory through woocommerce products list [ Sync Inventory ]
+
+2020-06-18 - version 1.0.2
+* Add- Pull original description using chrome extension
+* Fix- Inventory sync feature
+
+2020-05-16 - version 1.0.1
+* Add- Auto import products from Aliexpress
+* Add- Chrome extension compatible
+
+2020-04-09 - version 1.0.0
+* Inital release

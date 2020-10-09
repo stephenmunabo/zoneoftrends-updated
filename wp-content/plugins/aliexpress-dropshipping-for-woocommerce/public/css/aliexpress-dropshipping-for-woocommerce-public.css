@@ -1,0 +1,174 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .ced_ali_shipping_error p {
+	margin-bottom: 0px;
+	padding: 6px;
+	color: #fff;
+}
+.ced_ali_shipping_error {
+	background: #b22222;
+}
+.ced_ali_woo_country_error p {
+	margin-bottom: 0px !IMPORTANT;
+	color: #fff;
+}
+.woocommerce-checkout-review-order-table .ced_shipping_box {
+	display: none;
+}
+p.ced_ali_select_country {
+	margin-bottom: 0px;
+	background: #b22222;
+	padding: 5px 10px;
+	color: #fff;
+	text-align: center;
+}
+a.ced_shipping_cart.ced_shipping_button {
+	text-decoration: none;
+}
+.ced_ali_woo_country_error {
+	padding: 2px 5px;
+	background: #b22222;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.ced_shipping_box {
+	padding: 25px 0px;
+	border: 2px solid #fff;
+	background-clip: padding-box;
+	text-align: left;
+}
+.ced_shipping_button {
+	color: white;
+	background-color: #0073aa;
+	padding: 10px 30px;
+	border-radius: 3px;
+}
+.ced_ali_logistic_item {
+	display: flex;
+	margin: 30px 0;
+	align-items: center;
+}
+a.ced_shipping_button:focus, select.ced_ali_single_country:focus {
+	outline: none;
+}
+.ced_shipping_box h6 {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+	width: 60%;
+}
+.ced_shipping_box span {
+	font-size: 20px;
+	font-weight: 600;
+}
+.ced_ali_overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.ced_ali_overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+}
+
+.ced_ali_popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #f8f8f8;
+	border-radius: 5px;
+	width: 75%;
+	position: relative;
+  height: 70vh;
+}
+
+.ced_ali_popup .close {
+  position: absolute;
+  top: -8px;
+  right: 3px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.ced_ali_popup .content {
+  max-height: 80%;
+  overflow-y: scroll;
+  height: 100%;
+}
+select.ced_ali_single_country {
+	padding: 5px 5px;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+.ced_ali_popup .content h2 {
+	font-size: 24px;
+	font-weight: 500;
+	margin: 20px 0px;
+	color: black;
+}
+table#ced_shipping {
+	max-width: 100%;
+	padding: 10px 10px 10px 0px;
+	color: black;
+}
+a.ced_aliexpress_popup_apply {
+	font-weight: 600 !important;
+	font-size: 22px !important;
+	position: unset !important;
+	background-color: #007cba;
+	color: white !important;
+	padding: 5px 45px;
+	border-radius: 3px;
+}
+a.close.ced_aliexpress_popup_apply:hover {
+	background-color: #0073aa;
+}
+.ced_aliexpress_popup_apply_wrap {
+	text-align: center;
+}
+img.ced_aliexpress_loading_img_popup {
+	position: absolute;
+	left: 47%;
+	top: 50%;
+	z-index: 100;
+}
+.loader-bg:after {
+	content: "";
+	position: absolute;
+	background-color: black;
+	opacity: 0.15;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+#ced_shipping_method th {
+	position: sticky;
+	top: 0;
+	background-color: white;
+}
+
+@media screen and (max-width: 700px){
+  .ced_ali_popup{
+	width: 95%;
+  }
+  .ced_shipping_box h6 {
+	font-size: 14px;
+	width: 70%;
+  }
+  .ced_ali_popup .close {
+	top: -10px;
+	right: 5px;
+  }
+}

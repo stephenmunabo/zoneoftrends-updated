@@ -1,0 +1,1248 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ body, body *{
+  box-sizing: border-box;
+  border-radius: 2px;
+ }
+a.ced_ali_prev {
+  padding: 0px 18px 4px 22px;
+  text-decoration: none;
+  font-size: 28px;
+  color: #0071a1;
+  border-color: #0071a1;
+  background: #f3f5f6;
+  vertical-align: top;
+  border: 1px solid;
+}
+a.ced_ali_place_order {
+	color: #0071a1;
+	border-color: #0071a1;
+	background: #f3f5f6;
+	text-decoration: none;
+	border: 1px solid;
+	padding: 5px;
+	margin-top: 7px !IMPORTANT;
+	display: inline-block;
+}
+p.ced_ali_order_placed {
+	background: #007cba;
+	border-color: #007cba;
+	color: #fff;
+	display: inline-block;
+	padding: 11px;
+	margin-top: 6px;
+}
+a.ced_ali_next {
+  padding: 0px 24px 4px 24px;
+  text-decoration: none;
+  font-size: 28px;
+  margin-left: 7px;
+  color: #0071a1;
+  border-color: #0071a1;
+  background: #f3f5f6;
+  /* vertical-align: top; */
+  border: 1px solid;
+}
+.ced_ali_paginton {
+  /*position: relative;*/
+  /*float: right;*/
+  /*top: 26px;*/
+  margin: 30px 20px 30px 0;
+  text-align: right;
+}
+a.ced_ali_prev:hover, a.ced_ali_next:hover {
+  background: #f1f1f1;
+}
+ .ced-marketplaces-heading-main-wrapper,
+ .ced_aliexpress_wrap.ced_aliexpress_wrap_extn,
+ .ced_aliexpress_account_configuration_wrapper {
+  padding-right: 20px;
+ }
+ .ced-marketplaces-heading-wrapper, .ced_aliexpress_setting_header {
+  background-color: #ffffff;
+  padding: 8px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  justify-content: space-between;
+ }
+ .ced-marketplaces-heading-wrapper h2,
+ .ced_aliexpress_setting_header  h2{
+  margin: 0 15px 0 0;
+  font-size: 20px;
+  line-height: 1.33;
+ }
+ .ced-marketplaces-card-view-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 0 auto;
+ }
+ .navigation:after{
+  clear: both;
+  display: block;
+  content: "";
+ }
+ .ced-marketplace-card {
+  width: 30.33%;
+  margin-right: 3%;
+  margin-top: 30px;
+ }
+ .ced-marketplace-card a {
+  display: block;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  background-color: #f8f8f8;
+  text-decoration: none;
+ }
+ .ced-marketplace-card .thumbnail {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  padding: 20px 0;
+ }
+ .ced-marketplace-card .mp-label {
+  color: #333;
+  font-size: 18px;
+  padding: 15px 10px;
+ }
+ .navigation-wrapper {
+  background-color: #ffffff;
+  padding:7px 10px;
+  margin: 15px 20px 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ #bulk-action-selector-top,#bulk-action-selector-bottom
+ {
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 60%;
+ }
+
+#ced_aliexpress_logistics
+{
+  height: 60px !important;
+}
+ .ced_aliexpress_category_mapping_wrapper
+ {
+  margin-right: 20px;
+ }
+ .ced_aliexpress_category_not_mapped{
+  color: red;
+}
+#ced_aliexpress_category_mapping_header button {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.ced_aliexpress_current_account_name {
+  font-size: 14px;
+  color: #757171;
+  padding: 8px;
+}
+.navigation {
+  margin: 0;
+  border-bottom: 1px solid #cccccc;
+}
+.navigation li {
+  float: left;
+  margin: 0 0 0 7px;
+}
+select.ced_ali_auto_import_scheduler {
+  text-overflow: ellipsis;
+  border-radius: 0;
+  width: 99%;
+  padding: 5px 10px;
+  height: 40px;
+  border: 1px solid #a1a1a1;
+}
+.ced_aliexpress_account_configuration_fields_table th{
+  font-weight: bold;
+}
+.ced_aliexpress_account_configuration_fields_table select {
+  border: 1px solid #ddd;
+  height: auto;
+  min-width: 200px;
+}
+.ced_aliexpress_add_account_popup_main_wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform: translateY(-100%);
+  visibility: hidden;
+  transition: 0.3s linear all;
+  height: 100%;
+  overflow-y: auto;
+}
+.ced_aliexpress_add_account_popup_main_wrapper.show {
+  transform: translateY(0);
+  visibility: visible;
+  transition: 0.3s linear all;
+}
+.ced_aliexpress_add_account_popup_content {
+  max-width: 650px;
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+}
+.ced_aliexpress_add_account_popup_header {
+  background-color: #f1f1f1;
+  padding: 15px;
+  position: relative;
+}
+.ced_aliexpress_add_account_popup_header h5 {
+  margin: 0;
+  font-size: 22px;
+}
+.ced_aliexpress_add_account_popup_close {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  color: #877f7f;
+  cursor: pointer;
+}
+.ced_aliexpress_add_account_popup_body ul {
+  margin: 0;
+}
+.ced_aliexpress_add_account_popup_body {
+  padding: 30px 40px;
+}
+.ced_aliexpress_add_account_popup_body ul li {
+  list-style-type: decimal;
+  text-align: left;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.ced_aliexpress_add_account_popup_body h6 {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.ced_aliexpress_add_account_popup_body h6::after {
+  content: "";
+  border-bottom: 4px solid #444444;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 50px;
+  margin: 0 auto;
+}
+.ced_aliexpress_add_account_button_wrapper{
+  margin-top: 20px;
+}
+.ced_aliexpress_add_button{
+  background-color: #0073aa;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+.ced_aliexpress_add_button:hover,
+.ced_aliexpress_add_button:focus{
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px){
+  .navigation{
+   border-bottom: none;
+ }
+ .navigation li{
+   margin-top: 6px;
+ }
+ .navigation li a{
+   border-width: 1px 1px 1px 1px;
+ }
+ .ced-marketplaces-heading-wrapper h2, .ced_aliexpress_setting_header h2{
+   font-size: 16px;
+ }
+ .ced_aliexpress_account_configuration_fields_table select{
+   width: 120px;
+   font-size: 13px !important;
+   min-width: 120px;
+ }
+ .ced-marketplace-card{
+   width: 100%;
+   margin-right: 0;
+ }
+ .ced-marketplaces-heading-main-wrapper, .ced_aliexpress_wrap.ced_aliexpress_wrap_extn, .ced_aliexpress_account_configuration_wrapper{
+   padding-right: 10px;
+ }
+ .ced-marketplaces-card-view-wrapper{
+   padding-right: 10px;
+ }
+ .ced_aliexpress_add_account_popup_close{
+   top: 2px;
+   right: 15px;
+ }
+}
+
+.ced_aliexpress_loader{
+  display: none;
+}
+
+.ced_aliexpress_loader {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.52);
+  width: 100%;
+  z-index: 9999;
+  height: 108%;
+}
+.ced_aliexpress_loader img {
+  text-align: center;
+  margin: 0 auto;
+  width: 50px;
+  display: block;
+  margin-top: 25%;
+}
+
+.ced_aliexpress_loader {
+  background-color: rgba(255, 255, 255, 0.6);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+ #post-body-content {
+  padding-right: 20px;
+}
+.ced_aliexpress_categories{
+  display: none;
+}
+.manage_labels
+{
+  font-size: 20px;
+  color: #0073aa;
+}
+.ced_aliexpress_global_settings_fields_table th label
+{
+  font-weight: bold;
+}
+.ced_aliexpress_custom_button
+{
+  background-color: #0073aa;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+.ced_aliexpress_preview_product_popup_main_wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform: translateY(-100%);
+  visibility: hidden;
+  transition: 0.3s linear all;
+  color: #666666;
+
+}
+.ced_aliexpress_preview_product_popup_main_wrapper.show {
+  transform: translateY(0);
+  visibility: visible;
+  transition: 0.3s linear all;
+}
+.ced_aliexpress_preview_product_popup_content {
+  max-width: 800px;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: auto;
+  min-height: 450px;
+  height: 100%;
+  clear: both;
+}
+.ced_aliexpress_preview_product_popup_header {
+  padding: 10px;
+  position: relative;
+}
+.ced_aliexpress_preview_product_popup_header h5 {
+  margin: 0;
+  font-size: 22px;
+}
+.ced_aliexpress_preview_product_popup_close {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  color: #877f7f;
+  cursor: pointer;
+}
+.ced_aliexpress_preview_product_button_wrapper{
+  margin-top: 20px;
+}
+.preview_content {
+  padding: 10px;
+  float: left;
+}
+.preview-image-col {
+  width: 40%;
+}
+.preview_content-col {
+  width: 60%;
+}
+#Price_detail{
+  padding: 10px;
+  font-size: 28px;
+  background-color: #eeeeee;
+  color:#d0011b ;
+  font-weight: bold;
+}
+#preview-image img {
+  max-width: 290px;
+  height: 210px;
+}
+.preview_product_name{
+  color:  #328eba;
+  font-size: 20px;
+  margin-top:0;
+}
+.ced_aliexpress_preview_detail_desc img {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.ced_aliexpress_preview_detail ul li {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.ced_aliexpress_preview_detail_name {
+  width: 100px;
+}
+.ced_aliexpress_preview_detail_desc {
+  width: calc(100% - 110px);
+  margin-left: 10px;
+}
+.ced_aliexpress_product_variation {
+  border: 1px solid #dddddd;
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 10px;
+  min-width: 70px;
+  padding: 7px;
+  text-align: center;
+}
+
+.ced_aliexpress_qnty_wrapper {
+  border: 1px solid #dddddd;
+  display: inline-block;
+}
+.ed_aliexpress_qnty_point {
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+}
+.ed_aliexpress_qnty_point,.ed_aliexpress_qnty_number{
+  padding: 5px;
+}
+.ed_aliexpress_qnty_number {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  min-width: 40px;
+  display: inline-block;
+  text-align: center;
+}
+.ced_aliexpress_product_piece {
+  display: inline-block;
+  color: #777777;
+  margin-left: 15px;
+}
+.ced_aliexpress_preview_btn {
+  background-color: #ffffff;
+  border: 1px solid#d0011b;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 15px;
+  min-width: 150px;
+  padding: 13px;
+  text-transform: capitalize;
+}
+.ced_aliexpress_preview_buy_now{
+  background-color:#d0011b;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.ced_aliexpress_thumbnail ul {
+  display: flex;
+  overflow-y: auto;
+  margin: 0;
+}
+.ced_aliexpress_thumbnail ul li {
+  width: 100px;
+  margin: 9px;
+  cursor: pointer;
+  overflow: hidden;
+  height: 55px;
+}
+.ced_aliexpress_thumbnail ul li img{
+  max-width: 100%;
+  width: auto;
+}
+.ced_aliexpress_preview_product_popup_body::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+.ced_aliexpress_product_wrapper {
+  padding: 10px;
+}
+.ced_aliexpress_product_listing {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.ced_aliexpress_product_listing li {
+  display: flex;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+.ced_aliexpress_product_listing li .ced_aliexpress_product_value {
+  width: 110px;
+  font-weight: 500;
+}
+.ced_aliexpress_product_desc {
+  width: calc(100% - 120px);
+  margin-left: 10px;
+}
+.ced_aliexpress_product_title {
+  background-color: rgba(0,0,0,.02);
+  padding: 10px;
+  font-size: 18px;
+}
+.ced_aliexpress_product_para {
+  padding-left: 10px;
+}
+input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+}
+/*==========================================
+=            profile tab design            =
+==========================================*/
+.ced_aliexpress_profile_details_fields {
+  overflow-y: auto;
+}
+.ced_aliexpress_profile_details_fields table {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 15px auto;
+  table-layout: fixed;
+}
+.ced_aliexpress_profile_details_fields table td,
+.ced_aliexpress_profile_details_fields table th {
+  padding: 10px;
+}
+.ced_aliexpress_profile_heading {
+  text-align: left;
+  background-color: #0073aa;
+  color: #fff;
+  display: inline-block;
+  margin: 10px;
+}
+.ced_aliexpress_profile_details_fields table td input[type="text"],
+.ced_aliexpress_profile_details_fields table td select {
+  border: 1px solid #ddd;
+  height: auto;
+  width: 90%;
+}
+.ced_aliexpress_wal_required {
+  color: #fb0606;
+}
+.ced_aliexpress_profile_details_fields table td label {
+  font-weight: bold;
+}
+.ced_aliexpress_profile_details_wrapper {
+  padding-right: 20px;
+}
+/*=====  End of profile tab design  ======*/
+
+@media screen and (max-width: 767px) {
+  #ced_aliexpress_preview{
+  display: none;
+  }
+}
+.ced_aliexpress_immediate_operation
+{
+  display: block;
+  margin-left: 10px;
+}
+.ced_aliexpress_settings_heading , .ced_aliexpress_shipping_heading
+{
+  text-align: left;
+  background-color: #0073aa;
+  color: #fff !important;
+  display: inline-block;
+  margin: 10px;
+}
+.ced_aliexpress_prod_name
+{
+  font-size: 16px;
+}
+.profile_button
+{
+  margin:10px 20px;
+}
+table tbody tr input.shipping_input
+{
+  border: 1px solid #ddd;
+box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+background-color: #fff;
+color: #32373c;
+outline: 0;
+transition: 50ms border-color ease-in-out;
+width: 80%;
+}
+table tbody.ced_aliexpress_shipping_section td
+{
+  padding: 0px;
+}
+.ced_aliexpress_preview_product_popup_close
+{
+  font-size: 15px;
+}
+
+.pagination_button
+{
+  height: auto;
+  width: 3%;
+  border:1px solid #ccc;
+}
+#pagination_input
+{
+  width: 4%;
+  height: auto;
+  border:1px solid #ccc;
+}
+.ced_aliexpress_pagination_wrapper
+{
+  margin-top: 5px;
+}
+.notice
+{
+  margin: 10px 20px 0px 0px;
+}
+.not_completed
+{
+  color: red;
+}
+.stock_alert,.relist_notify
+{
+  color: #b67700;
+}
+.success_upload_on_aliexpress
+{
+  color: green;
+}
+#ced_aliexpress_pagination_wrapper
+{
+  margin-top: 10px;
+}
+#ced_aliexpress_pagination_wrapper a
+{
+  text-decoration: none;
+}
+.pagination_button
+{
+  width: 2%;
+  border: 1px solid #ccc;
+}
+.pagination_input
+{
+  width: 4%;
+   border: 1px solid #ccc;
+}
+.add_profile_button
+{
+  text-decoration: none;
+}
+.add_profile_button:hover
+{
+  color: #fff;
+}
+td input#ced_aliexpress_add_custom_profile_name
+{
+  margin-left: 26em;
+  background-color: #0073aa;
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+.ced_aliexpress_profile_dropdown
+{
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  max-height: 10px;
+}
+.ced_aliexpress_profile_selected_on_popup
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 100%;
+}
+.select_boxes
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 40%;
+}
+.select_boxes_product_page
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 13%;
+}
+.select_boxes_cat_map
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 100%;
+}
+.bulk-action-selector
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 60%;
+}
+.select_boxes_scheduler
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 90%;
+}
+.ced_aliexpress_inputs
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 40%;
+}
+#search_id-search-input
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 62%;
+}
+.ced_aliexpress_profile_popup_content
+{
+  width: 40%;
+  background-color: #fff;
+}
+.ced_aliexpress_profile_popup_content div#profile_pop_up_head
+{
+  width: 90%;
+  margin: 10px auto;
+}
+#ced_aliexpress_save_profile_through_popup
+{
+  margin:40px 0px;
+  width: 100%;
+}
+#ced_aliexpress_save_profile_through_popup_container
+{
+  width: 90%;
+  margin: auto;
+}
+ #profile_pop_up_head_main
+ {
+  background-color: #eeeeee;
+  width: 90%;
+  margin:20px auto;
+  overflow: hidden;
+ }
+#profile_pop_up_head_main h2
+{
+  color:  #0073aa;
+  padding:15px;
+   float: left;
+   margin: 0px;
+  width: 80%;
+}
+#profile_pop_up_head h3
+{
+  color:  #0073aa;
+}
+
+#profile_pop_up_head_main div
+{
+  width: 20%;
+  float: left;
+  padding:15px;
+  text-align: right;
+}
+.ced_aliexpress_profile_popup_close
+{
+  color: #877f7f;
+  cursor: pointer;
+}
+
+.switch_accounts:hover
+{
+  color: #fff;
+}
+
+.ced_aliexpress_wrap {
+  width: 100%;
+  margin: 10px auto;
+  }
+  .ced_aliexpress_setting_header.ced_aliexpress_bottom_margin
+  {
+  width: 98%;
+  margin: 10px 0px 10px 0px;
+  padding: 13px;
+  }
+  .ced_aliexpress_license_divs
+  {
+  width: 98%;
+  }
+  .ced_aliexpress_select
+  {
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+  }
+  .ced_aliexpress_current_account_name label
+  {
+  color:  #0073aa;
+  }
+  a.ced_configuration_plugin_main
+  {
+  padding: 8px 15px !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
+  margin-left: -10px !important;
+}
+.ced_aliexpress_select.ced_aliexpress_global_select_box.select_boxes {
+  min-width: 40%;
+}
+
+/*CSS addittion*/
+
+.ced_wTi_button_filter_table {
+  margin: 30px 0px 30px 0px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 2px 1px #ccc;
+  padding: 0 10px;
+  justify-content: space-evenly;
+  background-color: #0073aa;
+}
+.filters-wrapper {
+  background-color: white;
+  padding: 30px 5px 10px 10px;
+  border-radius: 3px;
+  margin: 0 20px 0 0;
+}
+.ced-heading-wrap {
+  background-color: #0073aa;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.ced-heading-wrap h2 {
+  margin: 0;
+  color: white;
+}
+.ced_aliexpress_filters {
+  width: 100%;
+  padding: 10px 0px 40px;
+}
+.ced_wTi_button_filter_table a {
+  padding: 8px 10px;
+  border: 1px solid #0073aa;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 600;
+  background-color: #f3f5f6;
+  color: #0073aa;
+  font-size: 14px;
+}
+.ced_wTi_button_filter_table a:hover {
+  background: #eee;
+  border-color: #0073aac7;
+}
+.ced_aliexpress_filters tr th {
+  padding: 15px 10px 15px 0px;
+  text-align: left;
+  width: 50%;
+  font-size: 14px;
+}
+.ced_aliexpress_filters tr td {
+  padding: 10px 0px;
+}
+.ced_aliexpress_filters tr td input {
+  width: 98%;
+  border-radius: 0;
+  padding: 10px 10px;
+  border: 1px solid #a1a1a1;
+}
+#ced_ali_min_price {
+  width: 48%;
+}
+#ced_ali_max_price {
+  width: 49%;
+}
+#ced_aliexpress_category {
+  max-width: 98%;
+}
+.ced_aliexpress_filters tr td select, select.ced_ali_schedule_select {
+  text-overflow: ellipsis;
+  border-radius: 0;
+  width: 99%;
+  padding: 5px 10px;
+  height: 40px;
+  border: 1px solid #a1a1a1;
+}
+.ced-wTi-add-markup-row-wrapper button {
+  background-color: #0073aa;
+  color: white;
+  font-size: 15px;
+  border: none;
+  min-width: 25px !important;
+  margin: 5px 0px 5px 5px;
+  font-weight: 700;
+  padding: 1px 8px 4px;
+}
+.ced-ali-filters-save-wrap {
+  margin: 15px 20px 15px 0;
+  text-align: right;
+}
+button.ced-ali-filters-save-btn, .save_schedule_settings{
+  background-color: #007cba;
+  color: white;
+  border: none;
+  padding: 12px 40px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button.ced-ali-filters-save-btn:hover {
+  background-color: #0073aa;
+}
+.ced_price_markup_row th {
+  width: 25%;
+  text-align: left;
+}
+.ced_aliexpress_price_markup_wrap {
+  padding: 10px 0px;
+}
+.ced_setting_price_markup_row th {
+  width: 35%;
+  text-align: left;
+  padding: 15px 10px 15px 0px;
+}
+.ced_setting_price_markup_row td {
+  padding: 10px 0;
+}
+.ced_setting_price_markup_row td input, .ced_setting_price_markup_row td select {
+  border-radius: 0;
+  padding: 5px 10px;
+  border: 1px solid #a1a1a1;
+}
+#ced_aliexpress_price_markup {
+  height: 40px;
+}
+.ced_ali_hotselling_div_wrap {
+  margin: 30px 0;
+}
+.ced_ali_sub_wrap {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 2px 1px #ccc;
+  padding: 0 10px;
+  justify-content: space-evenly;
+  background-color: #0073aa;
+}
+.ced_ali_sub_wrap > .ced_heading_wrap h2 {
+  color: white;
+}
+#ced_aliexpress_hotselling_category {
+  height: 40px;
+}
+#save_filters_settings_hotselling {
+  background-color: #f3f5f6;
+  color: #0073aa;
+  border: 1.5px solid #0e5997;
+  padding: 10px 35px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+#save_filters_settings_hotselling:hover {
+  background: #eee;
+  border-color: #0073aac7;
+}
+.ced_aliexpress_filters tr td input[type="checkbox"] {
+  width: unset;
+}
+#ced_save_ali_confg_set {
+  background-color: #0073aa;
+  color: white;
+}
+.ced_ali_navigation li:focus, .ced_ali_navigation li a:focus {
+  box-shadow: none;
+}
+.ced_ali_navigation li a {
+  background-color: white;
+  border: 0;
+  color: #555;
+  font-size: 14px;
+  display: block;
+  padding: 6px 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+a.ced_ali_navigation_active {
+  border-bottom: 3px solid #0073aa !important;
+  color: black !important;
+}
+.ced_ali_navigation li a:hover {
+  border-bottom: 3px solid #0073aa;
+}
+.ced_ali_connect_wrap {
+  padding: 10px 25px 11px;
+  background-color: #dc3232;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s all;
+}
+.ced_ali_connect_wrap:hover {
+  background-color: #0073aa;
+}
+a.ced_ali_connect_store {
+  color: white;
+  text-decoration: none;
+}
+.ced_ali_hot_selling_product_table_wrap {
+  background-color: white;
+  padding: 5px 7px;
+  margin: 0 20px 0 0;
+}
+.ced_ali_filter_view_prod_table_wrap {
+  margin: 0 20px 0 0;
+}
+.ced_ali_filters_view_table_wrap {
+  margin: 0 20px 0 0;
+}
+.ced_ali_filter_heading h2 {
+  color: white;
+}
+.ced_ali_filters_view_table_wrap {
+  background-color: white;
+  padding: 5px 7px;
+  margin: 0 20px 0 0;
+}
+.cedcommerce_page_ced_aliexpress div#wpfooter {
+  position: relative !IMPORTANT;
+}
+.ced_schedule_table {
+  border-spacing: 0 20px;
+  border: none !important;
+}
+.ced_schedule_table tbody tr th {
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+}
+div.ced_schedule_table_wrap{
+  margin: 10px 20px 10px 0px;
+  background-color: white;
+  padding: 30px 10px 10px;
+}
+.ced_schedule_table tbody {
+  background-color: #0073aa;
+}
+
+/*=========Media Query=========*/
+@media only screen and (max-width: 576px) {
+  .ced_aliexpress_filters tr th {
+  padding: 3px 0px 3px 3px;
+  display: block;
+  width: unset;
+  }
+  .ced_aliexpress_filters tr td, td > input {
+  display: block;
+  margin-right: 5%;
+  }
+  .ced_aliexpress_filters tr td input, .ced_aliexpress_filters tr td select {
+  margin-bottom: 10px;
+  width: 100%;
+  }
+  .ced_price_markup_row th {
+  width: unset;
+  display: block;
+  padding: 0px 5px 6px;
+  }
+  .ced_price_markup_row td {
+  display: block;
+  padding: 6px 0;
+  margin-right: 5%;
+  }
+  .ced_price_markup_row td input, .ced_price_markup_row td select {
+  width: 100%
+  }
+  .ced_aliexpress_filters {
+  width: 100%;
+  }
+  .ced_aliexpress_markup-table {
+  width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 576px) {
+  .ced_setting_price_markup_row th {
+  width: auto;
+  }
+  .ced_setting_price_markup_row td input, .ced_setting_price_markup_row td select{
+  padding: 6px 10px 7px 5px;
+  max-width: 120px;
+  min-width: 60px;
+  text-overflow: ellipsis;
+  }
+  #ced_aliexpress_price_markup {
+  padding: 5px 10px 8px 5px;
+  }
+  .ced_ali_hotselling_div_wrap {
+  margin: 20px 0;
+  }
+  .ced_ali_sub_wrap .ced_heading_wrap {
+  font-size: 12px;
+  margin-right: 10px;
+  }
+  .ced_ali_get_all_category {
+  margin-right: 20px;
+  }
+  .ced_ali_get_all_category select {
+  height: 36px;
+  font-size: 12px !important;
+  font-weight: 600;
+  }
+}
+.ced_menu_content, .ced_menu_button {
+background: slateblue;
+border-radius: 100%;
+border: 1px solid #ccc;
+width: 60px;
+height: 60px;
+margin-left: -40px;
+position: absolute;
+color: #FFFFFF;
+text-align: center;
+line-height: 60px;
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+-webkit-transition: -webkit-transform ease-out 200ms;
+transition: -webkit-transform ease-out 200ms;
+transition: transform ease-out 200ms;
+transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+cursor: pointer !important;
+}
+  .ced_menu_open {
+	display: none;
+  }
+  .ced_contact_menu_wrap {
+  margin: auto;
+  position: fixed;
+  bottom: 6px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 26px;
+  z-index: 99999;
+}
+  .ced_menu_content:hover {
+	background: #EEEEEE;
+	color: #3290B1;
+  }
+  .ced_menu_content:nth-child(3) {
+	-webkit-transition-duration: 180ms;
+	transition-duration: 180ms;
+  }
+  .ced_menu_content:nth-child(4) {
+	-webkit-transition-duration: 180ms;
+	transition-duration: 180ms;
+  }
+  .ced_menu_button {
+	z-index: 2;
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-webkit-transition-duration: 400ms;
+	transition-duration: 400ms;
+	-webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+	transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+	cursor: pointer;
+	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+  }
+  .ced_menu_open:checked ~ .ced_menu_content:nth-child(3) {
+  transition-duration: 180ms;
+  -webkit-transition-duration: 180ms;
+  -webkit-transform: translate3d(80px, 104.99997px, 0);
+  transform: translate3d(-13px, -100px, 0);
+}
+  .ced_menu_open:checked ~ .ced_menu_content:nth-child(4) {
+  transition-duration: 280ms;
+  -webkit-transition-duration: 280ms;
+  -webkit-transform: translate3d(-90.9466px, -52.47586px, 0);
+  transform: translate3d(-101.053px, -30.524px, 0);
+}
+  .ced_skype {
+	background-color: #0073aa;
+	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  .ced_skype:hover {
+	color: #669AE1;
+	text-shadow: none;
+  }
+  .ced_whatsapp {
+	background-color: green;
+	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  .ced_whatsapp:hover {
+	color: #70CC72;
+	text-shadow: none;
+  }
+  .ced_menu_button img {
+margin-top: 7px;
+}
+.ced_ali_extra_actions ul {
+  margin: 0px;
+}
